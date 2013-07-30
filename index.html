@@ -25,7 +25,88 @@
         <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
 
         <section class="container">
+            <form name="oeForm" action="" method="post">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName">
 
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName">
+
+                <label for="birthday">Birthday *</label>
+                <fieldset class="birthday-picker" id="birthday">
+                    <select class="birth-year" name="birth[year]"></select>
+                    <select class="birth-month" name="birth[month]"></select>
+                    <select class="birth-day" name="birth[day]"></select>
+                    <input type="hidden" name="birthdate" />
+                </fieldset>
+
+
+                <label for="eduLevel">Education Level *</label>
+                <select id="eduLevel">
+                    <option value="highSchool">High School</option>
+                    <option vaule="college">College</option>
+                </select>
+
+                <label for="occupation">Occupation *</label>
+                <input type="text" id="occupation">
+
+                <label for="billingPhoneNum">Phone Number *</label>
+                <input type="tel" id="billingPhoneNum">
+
+                <label for="billingAddress">Address *</label>
+                <input type="text" id="billingAddress">
+
+                <label for="billingCity">City *</label>
+                <input type="text" id="billingCity">
+
+                <label for="billingState">State *</label>
+                <input type="text" id="billingState">
+
+                <label for="billingPostalCode">Postal Code *</label>
+                <input type="text" id="billingPostalCode">
+
+                <label for="billingCountry">Country *</label>
+                <input type="text" id="billingCountry">
+
+                <label for="billingMatchShipping">My billing information is the same as my shipping information.</label>
+                <input type="checkbox" id="billingMatchShipping">
+
+                <label for="ccNumber">Credit Card Number *</label>
+                <input type="text" id="ccNumber">
+                <input type="text" id="ccTwo">
+                <input type="text" id="ccThree">
+                <input type="text" id="ccFour">
+
+                <label>Expiration Date *</label>
+                <label for="monthExp">Month</label>
+                <select id="monthExp">
+                    <option value="jan">January</option>
+                    <option value="feb">February</option>
+                    <option value="mar">March</option>
+                    <option value="apr">April</option>
+                    <option value="may">May</option>
+                    <option value="jun">June</option>
+                    <option value="jul">July</option>
+                    <option value="aug">August</option>
+                    <option value="sep">September</option>
+                    <option value="oct">October</option>
+                    <option value="nov">November</option>
+                    <option value="dec">December</option>
+                </select>
+
+                <label for="yearExp">Year</label>
+                <select id="yearExp"></select>
+
+                <label for="ccFirstName">First Name *</label>
+                <input type="text" id="ccFirstName">
+
+                <label for="ccLastName">Last Name *</label>
+                <input type="text" id="ccLastName">
+
+
+                </select>
+                </select>
+            </form>
         </section>
 
 
@@ -33,6 +114,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/birthdayPicker.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
